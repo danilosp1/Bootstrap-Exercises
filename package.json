@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "//": "http server na pasta atual (.) tirando o cache",
     "start": "http-server . -c-1"
   },
   "keywords": [],
@@ -11,6 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "4.1.1",
-    "http-server": "0.11.1"
+    "http-server": "0.12.3",
+    "popper.js": "1.14.3",
+    "jquery": "^3.6.0"
   }
 }
