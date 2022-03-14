@@ -13,6 +13,7 @@
             .then(html => {
                 destino.innerHTML = html
                 const resultado = html.match(/\<script\>([\s\S]*)\<\/script\>/)
+                console.log(resultado)
                 if(resultado && resultado.length >= 2) {
                     eval(resultado[1])
                 }
