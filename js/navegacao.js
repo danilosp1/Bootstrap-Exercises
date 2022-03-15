@@ -12,6 +12,8 @@
             .then(resp => resp.text())
             .then(html => {
                 destino.innerHTML = html
+
+                // procura tag script no arquivo, excluindo as quebras de linha para não dar erro. [1] é um grupo de captura para executar o que está em ([\s\S]*)
                 const resultado = html.match(/\<script\>([\s\S]*)\<\/script\>/)
                 console.log(resultado)
                 if(resultado && resultado.length >= 2) {
